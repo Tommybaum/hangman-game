@@ -1,7 +1,11 @@
-const WordDisplay = () => {
+const WordDisplay = (props) => {
+   // console.log(props.currentWord)
     return (
+       
         <>
-            <h1>WordDisplay Component</h1>
+            <h1>WordDisplay</h1>
+            <p>{props.currentWord}</p>
+
         </>
     )
 }

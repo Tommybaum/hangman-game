@@ -1,0 +1,20 @@
+a {
+    margin: 5em;
+    color: bisque;
+}
+a:hover {
+    background-color: brown;
+}
+
+#navbar {
+    border: 3px solid black;
+    text-align: center;
+
+}
+body {
+    background-color: slategray;
+}
+div:hover {
+    color:red;
+    
+}
