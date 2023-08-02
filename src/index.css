@@ -14,7 +14,7 @@ a:hover {
 body {
     background-color: slategray;
 }
-div:hover {
+button:hover {
     color:red;
     
 }

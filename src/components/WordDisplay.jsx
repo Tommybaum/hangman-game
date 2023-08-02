@@ -4,7 +4,7 @@ const WordDisplay = (props) => {
        
         <>
             <h1>WordDisplay</h1>
-            <p>{props.currentWord}</p>
+            <p>{props.currentWord ? props.currentWord : "Loading..."}</p>
 
         </>
     )
