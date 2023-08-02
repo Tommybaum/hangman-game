@@ -1,8 +1,6 @@
 
 import Game from './components/Game'
-import Graveyard from './components/Graveyard'
-import GuessForm from './components/GuessForm'
-import WordDisplay from './components/WordDisplay'
+import { Route, Routes, Link } from 'react-router-dom'
 import Instructions from './components/instructions'
 
 function App() {
@@ -10,11 +8,22 @@ function App() {
 
   return (
     <>
-      
-      <Game />
-      
-      <Instructions />
-      
+      <div id="container">
+        <div id="navbar">
+          <Link to="/">Game</Link>
+          <Link to="/instructions">Instructions</Link>
+        </div>
+        <div id="main-section">
+          <Routes>
+            <Route path="/" element={<Game />}></Route>
+            <Route path="/instructions" element={<Instructions />}></Route>
+          </Routes> 
+         </div>
+        {/* <Game /> */}
+      </div>
+
+
+
     </>
   )
 }

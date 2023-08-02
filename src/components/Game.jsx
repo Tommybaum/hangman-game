@@ -5,10 +5,13 @@ import WordDisplay from "./WordDisplay";
 const Game = () => {
     return (
         <>
-            <h1>Game Component</h1>
-            <GuessForm />
-            <WordDisplay />
-            <Graveyard />
+            <div>
+                <h1>Game Component</h1>
+                <GuessForm />
+                <WordDisplay />
+                <Graveyard />
+            </div>
+
         </>
     )
 };

@@ -1,7 +1,10 @@
 const Instructions = () => {
     return (
         <>
-            <h1>Instructions COmponent</h1>
+            <div>
+                <h1>Instructions COmponent</h1>
+            </div>
+
         </>
     )
 }
