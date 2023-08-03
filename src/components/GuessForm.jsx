@@ -5,7 +5,7 @@ const GuessForm = (props) => {
 
     return (
         <>
-            <h1>Guess Form </h1>
+            <h3>Welcome to Word Tommy's Word Guess game! </h3>
             <form onSubmit={props.formSubmitHandler}>
                 <label>Enter a single letter:
                     <input
