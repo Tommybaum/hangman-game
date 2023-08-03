@@ -3,14 +3,10 @@ import { useState } from "react";
 
 const GuessForm = (props) => {
 
-    const handleInput = (e) => {
-        e.preventDefault();
-        alert(props.letter)
-    }
     return (
         <>
             <h1>Guess Form </h1>
-            <form onSubmit={handleInput}>
+            <form onSubmit={props.formSubmitHandler}>
                 <label>Enter a single letter:
                     <input
                         type="text"

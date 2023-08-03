@@ -15,7 +15,7 @@ const Game = () => {
             try {
                 const response = await fetch(wordAPI);
                 const word = await response.json();
-                setCurrentWord(word)
+                setCurrentWord(word[0])
             } catch (error) {
                 console.log(error)
             }
@@ -23,11 +23,24 @@ const Game = () => {
         }
         newWord()
     }, []);
+
+    const formSubmitHandler = (event) => {
+        event.preventDefault();
+        
+        //console.log(currentWord)
+        //console.log(letter)
+        let check = currentWord.includes(letter)
+        console.log(check)
+        alert(check ? "Correct!" : "Wrong!")
+    }
+   
     return (
         <>
             <div>
                 <h1>Game Component</h1>
-                <GuessForm letter={letter} setLetter={setLetter} />
+                <GuessForm 
+                formSubmitHandler={formSubmitHandler}
+                letter={letter} setLetter={setLetter} />
                 <WordDisplay currentWord={currentWord} />
                 <Graveyard />
             </div>
