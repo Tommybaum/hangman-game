@@ -13,6 +13,7 @@ a:hover {
 }
 body {
     background-color: slategray;
+    font-family: tahoma;
 }
 button:hover {
     color:red;
